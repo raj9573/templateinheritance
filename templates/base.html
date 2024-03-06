@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}
+    <title>base page</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script src="{% static 'js/base.js' %}"></script>
+</head>
+<body>
+    
+
+        {% block body_block %}
+
+        <nav class="nav-bar" id="nav">
+            <a href="">Home</a> 
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Blog</a>
+
+    </nav>
+        <h1>This is the base page</h1>
+
+<button onclick="Func()">Color</button>
+
+        {% endblock %}
+
+
+
+
+</body>
+</html>
